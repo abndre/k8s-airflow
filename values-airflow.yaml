@@ -2,3 +2,13 @@ images:
   airflow:
     repository: my-dag
     tag: latest
+webserverSecretKey: "hsuahudfkaodkfoakdoakdo"
+extraEnv: |
+  - name: AIRFLOW__WEBSERVER__INSTANCE_NAME
+    value: 'K8S-AIRFLOW-DEV'
+  - name: AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE
+    value: 'America/Sao_Paulo'
+  - name: AIRFLOW__CORE__DEFAULT_UI_TIMEZONE
+    value: 'America/Sao_Paulo'
+  - name: AIRFLOW__CORE__DEFAULT_TIMEZONE
+    value: 'America/Sao_Paulo'
